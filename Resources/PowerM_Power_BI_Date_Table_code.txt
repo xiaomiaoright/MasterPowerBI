@@ -1,7 +1,3 @@
-# MasterPowerBI
-## Power M Query
-### 1. Create a date table in blank query with Advanced Editor
-```powershell
 let fnDateTable = (StartDate as date, EndDate as date, FYStartMonth as number) as table =>
   let
     DayCount = Duration.Days(Duration.From(EndDate - StartDate)),
@@ -31,4 +27,3 @@ in
     AddFY
 in
     fnDateTable
-```
